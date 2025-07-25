@@ -65,7 +65,7 @@ function HeroSection() {
           <a href="#projects" className="btn btn-primary">
             <i className="fas fa-code"></i> View Projects
           </a>
-          <a href="/src/assets/resume_love_khandelwal.pdf" className="btn btn-secondary">
+          <a href="./resume_love_khandelwal.pdf" className="btn btn-secondary">
             <i className="fas fa-envelope"></i> Get Resume
           </a>
         </div>

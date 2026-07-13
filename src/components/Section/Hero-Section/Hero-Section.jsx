@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './Hero-Section.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./Hero-Section.css";
 
 function HeroSection() {
   const [gradientAngle, setGradientAngle] = useState(0);
@@ -7,10 +7,10 @@ function HeroSection() {
 
   useEffect(() => {
     let animationFrameId;
-    
+
     const updateGradient = () => {
       if (!heroBackgroundRef.current) return;
-      
+
       heroBackgroundRef.current.style.background = `
         radial-gradient(
           circle at ${30 + Math.sin(gradientAngle * 0.01) * 10}% 
@@ -27,7 +27,7 @@ function HeroSection() {
     };
 
     const animate = () => {
-      setGradientAngle(prev => prev + 0.5);
+      setGradientAngle((prev) => prev + 0.5);
       updateGradient();
       animationFrameId = requestAnimationFrame(animate);
     };
@@ -45,27 +45,26 @@ function HeroSection() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section className="hero" id="home">
-      <div 
-        className="hero-background"
-        ref={heroBackgroundRef}
-      />
+      <div className="hero-background" ref={heroBackgroundRef} />
       <div className="hero-content">
         <h1 className="hero-title">Love Khandelwal</h1>
         <h2 className="hero-subtitle">MERN Stack Developer</h2>
         <p className="hero-description">
-          Highly skilled developer specializing in secure and scalable web applications with expertise in cybersecurity best practices and full-stack solutions.
+          Highly skilled developer specializing in secure and scalable web
+          applications with expertise in cybersecurity best practices and
+          full-stack solutions.
         </p>
         <div className="cta-buttons">
           <a href="#projects" className="btn btn-primary">
             <i className="fas fa-code"></i> View Projects
           </a>
-          <a href="./resume_love_khandelwal.pdf" className="btn btn-secondary">
+          <a href="/Resume_Love_Khandelwal_.pdf" className="btn btn-secondary">
             <i className="fas fa-envelope"></i> Get Resume
           </a>
         </div>

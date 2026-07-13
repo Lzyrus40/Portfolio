@@ -5,5 +5,5 @@ import process from 'process'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_PATH || "/react—vite—deploy",
+  base: process.env.VITE_BASE_PATH,
 })

@@ -26,7 +26,7 @@ const Projects = () => {
       deployLink: "https://ai-job-recommendation-ten.vercel.app/",
       link: "https://github.com/Lzyrus40/AI-Job-Recommendation",
       description:
-        "This is a full-stack job recommendation app that uses OpenAI's API to suggest jobs based on user profiles. It features a user-friendly interface for profile creation and job recommendations, leveraging AI to enhance the job search experience.",
+        "This is a full-stack AI-powered job recommendation application that uses semantic search and OpenAI embeddings to match users with relevant job opportunities based on their skills, experience, preferences, and profile information. The application features an intuitive interface for profile creation and personalized job recommendations, leveraging vector similarity to understand the meaning behind user profiles and job descriptions rather than relying on simple keyword matching.",
     },
     {
       title: "Employee Management System",

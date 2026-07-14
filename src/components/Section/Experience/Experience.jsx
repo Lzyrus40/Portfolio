@@ -1,7 +1,11 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faGraduationCap, faCertificate } from '@fortawesome/free-solid-svg-icons';
-import './Experience.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBriefcase,
+  faGraduationCap,
+  faCertificate,
+} from "@fortawesome/free-solid-svg-icons";
+import "./Experience.css";
 
 const Experience = () => {
   const experience = [
@@ -9,51 +13,54 @@ const Experience = () => {
       title: "Full Stack Web Developer",
       company: "Learn And Build",
       date: "Jul 2023 — Aug 2023",
-      description: "Developed full-stack web applications using modern technologies and frameworks. Collaborated with cross-functional teams to deliver high-quality solutions."
+      description:
+        "Developed full-stack web applications using modern technologies and frameworks. Collaborated with cross-functional teams to deliver high-quality solutions.",
     },
     {
       title: "Node.js Developer",
       company: "Orbiter",
       date: "Mar 2023 — Jun 2023",
-      description: "Specialized in backend development using Node.js, building scalable server-side applications and RESTful APIs with focus on performance optimization."
-    }
+      description:
+        "Specialized in backend development using Node.js, building scalable server-side applications and RESTful APIs with focus on performance optimization.",
+    },
   ];
 
   const education = [
     {
       title: "B.Tech in Computer Science",
       company: "Arya College of Engineering, Kukas, Jaipur",
-      date: "Sep 2021 — Present",
-      description: "Currently pursuing Bachelor of Technology in Computer Science with a GPA of 8.0. Focusing on software development, algorithms, and cybersecurity fundamentals."
-    }
+      date: "Sep 2021 — Apr 2025",
+      description:
+        "Completed Bachelor of Technology in Computer Science with a GPA of 8.0. Focusing on software development, algorithms, and cybersecurity fundamentals.",
+    },
   ];
 
   const certifications = [
     {
-      title:" MongoDB ",
+      title: " MongoDB ",
       company: "MongoDB University",
-      date: "2023-24"
+      date: "2023-24",
     },
     {
       title: "CISCO Networking Academy",
       company: "Cybersecurity Job Simulation",
-      date: "Sep 2023"
+      date: "Sep 2023",
     },
     {
       title: "Mastercard Cybersecurity",
       company: "Virtual Experience Program on Forage",
-      date: "Aug 2023"
+      date: "Aug 2023",
     },
     {
       title: "Introduction to Programming in C",
       company: "NPTEL",
-      date: "Mar 2023"
+      date: "Mar 2023",
     },
     {
       title: "Complete 2023 Web Development Bootcamp",
       company: "Udemy",
-      date: "Oct 2023"
-    }
+      date: "Oct 2023",
+    },
   ];
 
   return (
